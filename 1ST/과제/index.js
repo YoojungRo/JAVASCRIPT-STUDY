@@ -17,4 +17,4 @@ nextButton.addEventListener('click', () => {
 
     carousel.style.transform = `translate3d(-${500 * index}px, 0, 0)`;
 });
-
+ 
