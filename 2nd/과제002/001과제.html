@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제 001</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+
+    <script>
+
+
+        const h1 = document.querySelector('h1')
+        const p = document.querySelector('p')
+
+        const isThere = confirm("당신의 성적과 등급을 확인하고 싶습니까?")
+
+        if(isThere){
+            h1.textContent = "당신의 성적과 등급을 확인하고 싶습니까?"
+        }
+
+        const score = parseInt(prompt("중간고사 점수를 입력하세요."))
+
+        if(score >= 90){
+            p.textContent = document.write(`${score}점 A등급입니다. <br>`)
+
+        }else if(score >= 80){
+            p.textContent = document.write(`${score}점 B등급입니다. <br>`)
+        }else if(score >= 70){
+            p.textContent = document.write(`${score}점 C등급입니다. <br>`)
+        }else if(score >= 60){
+            p.textContent = document.write(`${score}점 D등급입니다. <br>`)
+        }else if(score < 60){
+            p.textContent = document.write(`${score}점 F등급입니다. <br>`)
+        }
+    </script>
+
+</body>
+</html>
